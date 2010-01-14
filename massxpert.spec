@@ -1,6 +1,6 @@
 Name:		massxpert
 Version:	2.1.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Linear polymer mass spectrometry software
 Group:		Sciences/Chemistry
 License:	GPLv3
@@ -17,6 +17,10 @@ BuildRequires:	desktop-file-utils
 
 Requires:	%{name}-data = %{version}
 Suggests:	%{name}-doc
+Obsoletes:	polyxmass <= 0.9.7
+Obsoletes:	polyxmass-common <= 0.8.7
+Obsoletes:	%{mklibname polyxmass 11} <= 0.9.1
+Obsoletes:	%{mklibname polyxmass 11 -d} <= 0.9.1
 
 %description
 Massxpert is a software environment for polymer chemistry modelling 
@@ -38,6 +42,8 @@ It is the successor of GNU polyxmass.
 Summary:	Data for massxpert
 Group:		Sciences/Chemistry
 
+Obsoletes:	polyxmass-data <= 0.8.7
+
 %description data
 This package contains the data files for %{name}.
 
@@ -51,6 +57,8 @@ This package contains the data files for %{name}.
 %package doc
 Summary:	Documentation for %{name}
 Group:		Sciences/Chemistry
+
+Obsoletes:	polyxmass-doc <= 0.9.0
 
 %description doc
 This package contains the pdf manual for %{name}.
