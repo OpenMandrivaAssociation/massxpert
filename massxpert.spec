@@ -1,6 +1,6 @@
 Name:		massxpert
 Version:	2.1.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Linear polymer mass spectrometry software
 Group:		Sciences/Chemistry
 License:	GPLv3
