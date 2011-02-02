@@ -1,5 +1,5 @@
 Name:		massxpert
-Version:	2.4.0
+Version:	2.4.2
 Release:	%mkrel 1
 Summary:	Linear polymer mass spectrometry software
 Group:		Sciences/Chemistry
@@ -73,7 +73,7 @@ This package contains the pdf manual for %{name}.
 
 %prep
 %setup -q
-%patch0 -p1 -b .qstring
+# %patch0 -p1 -b .qstring
 %patch1 -p1 -b .include
 
 %build
