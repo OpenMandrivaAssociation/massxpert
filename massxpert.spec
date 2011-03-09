@@ -1,5 +1,5 @@
 Name:		massxpert
-Version:	2.4.2
+Version:	2.4.3
 Release:	%mkrel 1
 Summary:	Linear polymer mass spectrometry software
 Group:		Sciences/Chemistry
@@ -13,7 +13,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	qt4-devel
 BuildRequires:	cmake
 BuildRequires:	freetype2-devel
-BuildRequires:	tetex-latex
+BuildRequires:	texlive-latex
 BuildRequires:	desktop-file-utils
 
 Requires:	%{name}-data = %{version}
