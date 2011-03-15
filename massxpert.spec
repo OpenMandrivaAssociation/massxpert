@@ -1,6 +1,6 @@
 Name:		massxpert
 Version:	2.4.3
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Linear polymer mass spectrometry software
 Group:		Sciences/Chemistry
 License:	GPLv3
@@ -20,6 +20,7 @@ Requires:	%{name}-data = %{version}
 Suggests:	%{name}-doc
 Obsoletes:	polyxmass <= 0.9.7
 Obsoletes:	polyxmass-common <= 0.8.7
+Obsoletes:	polyxmass-doc <= 0.9.0
 Obsoletes:	%{mklibname polyxmass 11} <= 0.9.1
 Obsoletes:	%{mklibname polyxmass 11 -d} <= 0.9.1
 
