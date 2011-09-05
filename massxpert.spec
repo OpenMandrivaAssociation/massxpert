@@ -1,13 +1,12 @@
 Name:		massxpert
-Version:	2.4.3
-Release:	%mkrel 2
+Version:	3.1.0
+Release:	%mkrel 1
 Summary:	Linear polymer mass spectrometry software
 Group:		Sciences/Chemistry
 License:	GPLv3
 Url:		http://massxpert.org/
 Source0:	http://download.tuxfamily.org/massxpert/source/%{name}-%{version}.tar.gz
-Patch0:		fix_build.patch
-Patch1:		fix_missing_include.patch
+
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 BuildRequires:	qt4-devel
@@ -74,8 +73,6 @@ This package contains the pdf manual for %{name}.
 
 %prep
 %setup -q
-# %patch0 -p1 -b .qstring
-%patch1 -p1 -b .include
 
 %build
 %cmake_qt4 -DBUILD_ALL=1
