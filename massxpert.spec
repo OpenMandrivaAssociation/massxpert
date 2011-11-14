@@ -1,5 +1,5 @@
 Name:		massxpert
-Version:	3.1.0
+Version:	3.2.0
 Release:	%mkrel 1
 Summary:	Linear polymer mass spectrometry software
 Group:		Sciences/Chemistry
