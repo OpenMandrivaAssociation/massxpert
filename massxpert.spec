@@ -12,7 +12,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	qt4-devel
 BuildRequires:	cmake
 BuildRequires:	freetype2-devel
-BuildRequires:	texlive
+BuildRequires:	texlive-latex
 BuildRequires:	desktop-file-utils
 
 Requires:	%{name}-data = %{version}
