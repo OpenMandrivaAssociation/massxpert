@@ -13,6 +13,8 @@ BuildRequires:	qt4-devel
 BuildRequires:	cmake
 BuildRequires:	freetype2-devel
 BuildRequires:	texlive-latex
+BuildRequires:	texlive-bibtex.bin
+BuildRequires:	texlive-makeindex.bin
 BuildRequires:	desktop-file-utils
 
 Requires:	%{name}-data = %{version}
