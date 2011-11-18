@@ -77,7 +77,7 @@ This package contains the pdf manual for %{name}.
 %setup -q
 
 %build
-%cmake_qt4 -DBUILD_ALL=1
+%cmake_qt4 -DBUILD_ALL=1 -DPEDANTIC=0
 %make
 
 %install
