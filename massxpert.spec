@@ -1,13 +1,11 @@
 Name:		massxpert
-Version:	3.2.0
-Release:	%mkrel 1
+Version:	3.4.0
+Release:	1
 Summary:	Linear polymer mass spectrometry software
 Group:		Sciences/Chemistry
 License:	GPLv3
 Url:		http://massxpert.org/
-Source0:	http://download.tuxfamily.org/massxpert/source/%{name}-%{version}.tar.gz
-
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Source0:	http://download.tuxfamily.org/massxpert/source/%{name}-%{version}.tar.bz2
 
 BuildRequires:	qt4-devel
 BuildRequires:	cmake
@@ -32,7 +30,6 @@ and simulation/analysis of mass spectrometric data.
 It is the successor of GNU polyxmass.
 
 %files
-%defattr(-,root,root,-)
 %{_bindir}/%{name}
 %{_libdir}/%{name}
 %{_datadir}/applications/%{name}.desktop
@@ -81,7 +78,6 @@ This package contains the pdf manual for %{name}.
 %make
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std -C build
 
 # icon
@@ -101,6 +97,3 @@ desktop-file-install	--dir %{buildroot}%{_datadir}/applications \
 # drop the installed doc
 # GPLv3 license text not needed and manual relocated in the doc subpackage
 rm -rf %{buildroot}%{_defaultdocdir}/%{name}
-
-%clean
-rm -rf %{buildroot}
