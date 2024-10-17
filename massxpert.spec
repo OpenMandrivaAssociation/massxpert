@@ -4,7 +4,7 @@ Release:	1
 Summary:	Linear polymer mass spectrometry software
 Group:		Sciences/Chemistry
 License:	GPLv3
-Url:		http://massxpert.org/
+Url:		https://massxpert.org/
 Source0:	http://download.tuxfamily.org/massxpert/source/%{name}-%{version}.tar.bz2
 
 BuildRequires:	qt4-devel
